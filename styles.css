@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-stone100: hsl(30, 54%, 90%);
+  --color-stone150: hsl(30, 18%, 87%);
+  --color-stone600: hsl(30, 10%, 34%);
+  --color-stone900: hsl(24, 5%, 18%);
+  --color-brown800: hsl(14, 45%, 36%);
+  --color-rose800: hsl(332, 51%, 32%);
+  --color-rose50: hsl(330, 100%, 98%);
+  --font-family1: "Young Serif", serif;
+  --font-family2: "Outfit", sans-serif;
+}
+
+html {
+  background-color: var(--color-stone100);
+  font-size: 16px;
+  color: var(--color-stone600);
+  font-family: var(--font-family2);
+}
+
+.card {
+  max-width: 736px;
+  margin: 100px auto;
+  background-color: white;
+  padding: 40px;
+  border-radius: 24px;
+}
+
+img {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+}
+
+h1,
+h2 {
+  font-family: var(--font-family1);
+  font-weight: 400;
+}
+
+li {
+  list-style-position: inside;
+}
+
+.card h1 {
+  font-size: 40px;
+  color: var(--color-stone900);
+  margin-top: 40px;
+}
+
+.card p {
+  font-size: 16px;
+  color: var(--color-stone600);
+}
+
+.card .intro {
+  margin-top: 24px;
+}
+
+.preparation {
+  margin-top: 32px;
+  padding: 24px;
+  background-color: var(--color-rose50);
+  border-radius: 12px;
+}
+
+.preparation span {
+  font-size: 20px;
+  color: var(--color-rose800);
+  font-weight: 600;
+}
+
+.preparation ul {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ingredients {
+  margin-top: 32px;
+  border-bottom: 1px solid var(--color-stone150);
+}
+
+.ingredients h2 {
+  font-size: 28px;
+  color: var(--color-brown800);
+}
+
+.ingredients ul {
+  margin-top: 24px;
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.instructions {
+  margin-top: 32px;
+}
+
+.instructions h2 {
+  font-size: 28px;
+  color: var(--color-brown800);
+}
+
+.instructions ol {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.instructions li::marker {
+  color: var(--color-brown800);
+  font-weight: bold;
+}
+
+.nutrition {
+  margin-top: 32px;
+}
+
+.nutrition h2 {
+  font-size: 28px;
+  color: var(--color-brown800);
+}
+
+.nutrition p {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.nutrition div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row {
+  border-bottom: 1px solid var(--color-stone150);
+  margin-left: 32px;
+}
